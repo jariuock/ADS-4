@@ -33,7 +33,8 @@ int binarySearchCount(int* arr, int left, int right, int target) {
         if (arr[mid] == target) {
             first = mid;
             r = mid - 1;
-        } else if (arr[mid] < target)
+        }
+        else if (arr[mid] < target)
             l = mid + 1;
         else
             r = mid - 1;
@@ -48,7 +49,8 @@ int binarySearchCount(int* arr, int left, int right, int target) {
         if (arr[mid] == target) {
             last = mid;
             l = mid + 1;
-        } else
+        }
+        else
             r = mid - 1;
     }
     return last - first + 1;
